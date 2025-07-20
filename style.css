@@ -1,0 +1,442 @@
+@charset "UTF-8";
+
+@import url(fontes/Digitalt.otf);
+@import url(fontes/Digital\ Dare.ttf);
+@import url(Digitalo\ Personal\ Use\ Only.ttf);
+@import url(fontes/Digital\ Dare.otf);
+@import url(fontes/idroid.otf);
+
+@font-face {
+    font-family: 'Digitalt';
+    src: url(fontes/Digitalt.otf); format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Digitall';
+    src: url(fontes/Digital\ Dare.ttf); format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Digitalo';
+    src: url(fontes/Digitalo\ Personal\ Use\ Only.ttf); format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Digital';
+    src: url(fontes/Digital\ Dare.otf); format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Idrod';
+    src: url(fontes/idroid.otf); format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0:#000000;
+    --cor1:#a2c3ff;
+    --cor2:#090037;
+    --cor3:#2f7f58;
+    --cor4:#2e1507;
+    --cor5:#35ff4d;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-digitalt: 'Digitalt', cursive;
+    --fonte-digitall: 'Digitall', cursive;
+    --fonte-digitalo: 'Digitalo', cursive;
+    --fonte-digital: 'Digital', cursive;
+    --fonte-idrod: 'Idrod', cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: (--fonte-padrao);
+}
+
+header {
+  width: 100%;
+  background-image: url(imagens/Home\ \(5\).png);
+  background-size: cover;       /* Preenche toda a tela */
+  background-position: center;
+  color: white;
+  padding: 50px;
+}
+
+nav {
+    text-align: center;
+    font-size: 14px;
+}
+
+nav > a {
+    color: #ffffff;
+    margin: auto;
+    padding: 5px 5px;
+    font-family: var(--fonte-padrao);
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+    text-shadow: 0px 0px 7px black;
+}
+
+a:hover {
+    color: #0bcd6f;
+}
+
+hr {
+  border: none;           /* remove a linha padrão */
+  height: 1px;            /* define a espessura */
+  background-color: #ffffffd1; 
+  width: 100%;             /* tamanho da linha */
+  margin: 10px auto;      /* espaço acima/abaixo e centralização */
+}
+
+header > h1 {
+  font-family: var(--fonte-idrod);
+    color: #ffffff;
+    text-align: center;
+    min-width: 300px;
+    max-width: 1500px;
+    padding-top: 50px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.762);
+}
+
+.azul {color: #0bcd6f;}
+
+header > p {
+    font-size: 16px;
+    text-align: center;
+    min-width: 300px;
+    max-width: 1500px;
+    font-family: var(--fonte-digital);
+    text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.611);
+}
+
+.container {
+    min-width: 300px;
+    max-width: 1500px;
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center;     /* centraliza verticalmente */
+}
+
+#menor {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e5dede6f;
+    font-size: 14px;
+    min-width: 300px;
+    max-width: 1500px;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 45px;
+    text-shadow: 2px 2px 7px rgba(34, 34, 34, 0.692);
+    font-weight: 500;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cta{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0bcd6f;
+    color: rgb(0, 0, 0);
+    padding: 13px 20px;
+    border: none;
+    font-weight: 900;
+    font-size: 16px;
+    border-radius: 8px;
+    transition:  0.3s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#cta:hover {
+    background-color: #8de1d1;
+    color: #121111;
+}
+
+main {
+     display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  background: #ffffff;
+  flex-wrap: wrap;
+}
+
+.quem-somos {
+  background-image: url(imagens/wallpaper006.jpg);
+  padding: 60px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.quem-somos .conteudo {
+  max-width: 900px;
+  margin: 0 auto;
+  color: #000000;
+  line-height: 1.7;
+}
+
+.quem-somos h2 {
+  font-size: 3rem;
+  color: var(--cor0);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.quem-somos h3 {
+  color: var(--cor0);
+  font-size: 1.4rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.quem-somos p {
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+}
+
+.quem-somos ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.quem-somos li {
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+}
+
+.quem-somos blockquote {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--cor0);
+  border-left: 4px solid #000000;
+  padding-left: 15px;
+}
+
+
+main > div {
+    color: #000000a9;
+    width: 100%;
+    padding: 50px;
+}
+
+.grade-caixas {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.caixa {
+  background-color: #030303;
+  width: 100%;
+  max-width: 340px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.caixa img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.caixa h2 {
+    font-size: 28px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+}
+
+.caixa ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.caixa li {
+  text-align: left;
+    font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.cta-caixa {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ofertas-digitais {
+  padding: 60px 20px;
+  background-color: #000000;
+  text-align: center;
+  font-family: var(--fonte-idrod);
+}
+
+.ofertas-digitais h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.ofertas-digitais .subtitulo {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+  font-family: var(--fonte-padrao);
+}
+
+.bloco-curso {
+  padding: 10px 20px;
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.container-curso {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  max-width: 1000px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.curso-info {
+  text-align: center;
+  max-width: 300px;
+}
+
+.img-curso {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: 'Seu-Fonte-Futurista', sans-serif;
+}
+
+.cta {
+  background: red;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:  0.3s;
+}
+
+.cta > a {
+    color: white;
+    cursor: pointer;
+    transition:  0.3s;
+    text-decoration: none;
+}
+
+.cta:hover {
+  background: #cc0000;
+}
+
+/* Rodapé simples com créditos */
+.rodape-final {
+  background-color: #191616;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Seção de suporte */
+.bloco-suporte {
+  background-image: url(imagens/wallpaper006.jpg);
+  color: #000000;
+  padding: 60px 20px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.conteudo-suporte {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.bloco-suporte h2 {
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.bloco-suporte .descricao {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.bloco-suporte .botao-whatsapp {
+  display: inline-block;
+  background-color: #25D366;
+  color: rgb(255, 255, 255);
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.bloco-suporte .botao-whatsapp:hover {
+  background-color: #1ebe5d;
+}
+
+.bloco-suporte a {
+  color: #00bfa6;
+  text-decoration: none;
+}
+
+.bloco-suporte a:hover {
+  text-decoration: none;
+}
+
+.bloco-suporte .apoio {
+  margin-top: 30px;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+
+
+
+
+
+
+
+
